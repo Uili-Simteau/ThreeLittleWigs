@@ -29,8 +29,11 @@ Customer DB
   - Edit a new customer
   - Delete a customer
 
+Email Order Form
+
   Stretch
   - connection with QuickBooks or Xero?
+  - API to supplier website for stock selection
 
 Catalogue - api with Jon Renau wholesale/supplier or link to website.
 
