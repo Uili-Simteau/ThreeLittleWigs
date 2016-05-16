@@ -39,7 +39,7 @@ Customer DB
 Catalogue - api with Jon Renau wholesale/supplier or link to website.
 
 ## Repo
-Link to the repo - very important
+https://github.com/Uili-Simteau/ThreeLittleWigs.git
 
 ## Technologies
 What technologies are you going to play with
