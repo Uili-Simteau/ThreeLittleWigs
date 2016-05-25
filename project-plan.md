@@ -8,8 +8,6 @@ What do you want to get better at?
 * use of Trello board to organise project
 
 
-
-
 ## Description
 This preface is the brief description of my project, Three Little Wigs, The Web App.
 
@@ -20,12 +18,10 @@ My wife carries out consultations with prospective wig clients. This app is goin
 Brief functionality:
 
 Basic landing page for prospective customers.
-  - About TLW
-  - Sign up for Newsletter
-  - Funding info
-  - Contact
-
-Secure login for admin
+  - admin login
+  - About content
+  - Singup for newsletter
+  - Contect details
 
 Customer DB
   - Find a customer
@@ -33,8 +29,11 @@ Customer DB
   - Edit a new customer
   - Delete a customer
 
+Email Order Form
+
   Stretch
   - connection with QuickBooks or Xero?
+  - API to supplier website for stock selection
 
 Catalogue - api with Jon Renau wholesale/supplier or link to website.
 
