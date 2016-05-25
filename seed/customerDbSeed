@@ -1,4 +1,33 @@
-"Active Status","Customer","Balance","Balance Total","Company","Mr, Mrs","First Name","M.I.","Last Name","Contact","Phone","Fax","Alt. Phone","Alt. Contact","Email","Bill to 1","Bill to 2","Bill to 3","Bill to 4","Bill to 5","Ship to 1","Ship to 2","Ship to 3","Ship to 4","Ship to 5","Customer Type","Terms","Rep","Tax Code","Resale Num","Account No.","Credit Limit"
+exports.seed = function(knex, Promise) {
+  return Promise.join(
+    // Deletes ALL existing entries
+    knex('customers').del(),
+
+    // Inserts seed entries
+    knex('customers').insert({id: 1, first-name: "Olly", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/olly.jpg", purchased: "I love podcasts, exercise, scifi, surfing and code! I'm a 1,2,3 type of guy.", notes: ''}),
+    knex('customers').insert({id: 2, first-name: "Hape", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/hape.jpg", purchased: "Food, music, sports, the outdoors, health & fitness, family.", notes: ''}),
+    knex('customers').insert({id: 3, first-name: "Uili", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/uili.jpg", purchased: "I like making stuff. - out of wood mainly.", notes: ''}),
+    knex('customers').insert({id: 4, first-name: "Surya", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/surya.jpg", purchased: "I am a deep thinker and  I like music, dance and programming.", notes: ''}),
+    knex('customers').insert({id: 5, first-name: "Tony", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/tony.jpg", purchased: "I loved Star Trek before it was cool to love Star Trek.", notes: ''}),
+    knex('customers').insert({id: 6, first-name: "Ben", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/ben.jpg", purchased: "Activist app appropriator, passionate 'Zip' aficionado.", notes: ''}),
+    knex('customers').insert({id: 7, first-name: "Ollie", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/olll2.jpg", purchased: "Hobbies: Singing duets with Vicken.", notes: ''}),
+    knex('customers').insert({id: 8, first-name: "Keanu", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/keanu.jpg", purchased: "I am a deep thinker and  I like music, dance and programming.", notes: ''}),
+    knex('customers').insert({id: 9, first-name: "Piet", last-name: "House EDA", email: "3", home-phone: "/public/images/profile-pics/piet.jpg", purchased: "Piet is a great teacher, panther trainer and a former hardware nerd.  General legend and learning friend, he is loyal to House EDA.", notes: ''}),
+    knex('customers').insert({id: 10, first-name: "Simon", last-name: "House EDA", email: "3", home-phone: "/public/images/profile-pics/simon.jpg", purchased: "Simon is a loyal teacher and developer for House EDA.  He is incredibly reliable, carrying out high risk missions for his EDA lords.", notes: ''}),
+    knex('customers').insert({id: 11, first-name: "Joshua", last-name: "House EDA", email: "3", home-phone: "/public/images/profile-pics/joshua.jpg", purchased: "Joshua is a puzzle solver, and one of the original founders of House EDA.  An intelligent Lord with a quick witt, he will not be out thought.", notes: ''}),
+    knex('customers').insert({id: 12, first-name: "Mix", last-name: "House EDA", email: "3", home-phone: "/public/images/profile-pics/mix.jpg", purchased: "Mix is a Knight of Valour, teacher and a self described open source nerd.  He serves House EDA with loyalty, and will defend his house with blood.", notes: ''}),
+    knex('customers').insert({id: 13, first-name: "Lizzie", last-name: "House Kotare", email: "4", home-phone: "/public/images/profile-pics/lizzie.jpg", purchased: "Lizzie embraces change, and has faith in the peolpe of the Seven Kingdoms to make their own destiny.", notes: ''}),
+    knex('customers').insert({id: 14, first-name: "Rahmona", last-name: "House Kotare", email: "4", home-phone: "/public/images/profile-pics/rahmona.jpg", purchased: "Rahmonda is originally from  Essos, across the narrow sea from Westeros. She is a dog lover, technology enthusiast, and loyal to the throne.", notes: ''}),
+    knex('customers').insert({id: 15, first-name: "Jess", last-name: "House Kotare", email: "4", home-phone: "....", purchased: "Jess is an artist, a coder, a linux nerd and a forest druid. She is also a worg, able to communicate with animals.", notes: ''}),
+    knex('customers').insert({id: 16, first-name: "Heidi", last-name: "House Kotare", email: "4", home-phone: "....", purchased: "Heidi loves change, just not today.  She is a mystic.", notes: ''})
+
+  );
+};
+
+
+
+
+/*"Active Status","Customer","Balance","Balance Total","Company","Mr, Mrs","First Name","M.I.","Last Name","Contact","Phone","Fax","Alt. Phone","Alt. Contact","Email","Bill to 1","Bill to 2","Bill to 3","Bill to 4","Bill to 5","Ship to 1","Ship to 2","Ship to 3","Ship to 4","Ship to 5","Customer Type","Terms","Rep","Tax Code","Resale Num","Account No.","Credit Limit"
 "","Active","Aimee Levin Mall",0.00,0.00,,,,,,,,,,,,"Aimee Levin Mall",,,,,,,,,,,,,,,,"",
 "","Active","Aimie Levin Mall (Fun)",0.00,0.00,,,,,,,,,,,,"Aimie Levin Mall (Fun)",,,,,,,,,,,,,,,,"",
 "","Active","Ali Simpson",0.00,0.00,,,,,,,,,,,,"Ali Simpson","39 Regent Drive","Paraparaumu","04 905 8434","027 44 88 700",,,,,,,,,,,,"",
@@ -234,3 +263,4 @@
 "","Active","Wihau Tamihana",0.00,0.00,,,,,,,,,,,,"Wihau Tamihana",,,,,,,,,,,,,,,,"",
 "","Active","xxxxx",0.00,0.00,,,,,,,,,,,,"xxxxx",,,,,,,,,,,,,,,,"",
 -1769235265.26,"Active","zahra Lyford",0.00,0.00,,,"Zahra",,"Lyford","Zahra Lyford",,,,,,"Zahra Lyford","3 Bertram Grove","NaeNae","Lower Hutt",,,,,,,,,,,,,"",
+*/
