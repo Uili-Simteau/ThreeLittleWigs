@@ -6,6 +6,11 @@
 What do you want to get better at?
 * Pulling together whole APP using express
 * use of Trello board to organise project
+* sing-in/up to web database/newsletter
+* form fillout and email to owner
+* DB maintainence - user search, add, update, delete
+*
+
 
 
 ## Description
