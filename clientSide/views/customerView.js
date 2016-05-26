@@ -8,11 +8,9 @@ function exampleTemplate( object ) {
     h('div#header',
       h('h1.classy', "Welcome " + name + "!", { style: {'background-color': 'white'} })
     ),
-    h('div#menu', { style: {'background-color': '#2f2'} },
-      h('ul',
-        h('li', 'one'),
-        h('li', 'two'),
-        h('li', 'three')
+    h('form', { style: {'background-color': '#2f2'} },
+      h('p', "Login: " + 'input Placeholder="email or username"'
+      h('p', "Login: " + 'input Placeholder="email or username"'
       )
     ),
     h('h2', 'content title',  { style: {'background-color': '#f22'} }),
@@ -20,10 +18,6 @@ function exampleTemplate( object ) {
       "so it's just like a templating engine,\n",
       "but easy to use inline with javascript\n"
     ),
-    h('p',
-      "the intension is for this to be used to create\n",
-      "reusable, interactive html widgets. "
-    )
   )
 
   return domElement
