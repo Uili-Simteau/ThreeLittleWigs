@@ -7,7 +7,7 @@ document.onload(function() {
 });
 
 var button = document.getElementById(#button){
-  onclick
+  onclick('i am clicked')
 }
 
 request.get('/users', function(err, data) {

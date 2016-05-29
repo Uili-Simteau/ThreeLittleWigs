@@ -1,5 +1,29 @@
+html{
+  display: flex;
+  justify-content:center;
+  height: 100%
+}
+
 body {
   color: #fff;
   background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width:80%;
+  height: 100%;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+button {
+  background-color: white;
 }
 
