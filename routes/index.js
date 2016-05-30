@@ -19,7 +19,7 @@ router.get('/customers/', function(req, res, next) {
 });
 
 /*GET new Cumstomer*/
-router.post('newCustomer', function(req, res, next) {
+router.post('/newCustomer', function(req, res, next) {
   db.addNew('customers', req.body, function(err, data) {
     res.redirect('/customers/' +data[0]);
   })
