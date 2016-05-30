@@ -9,13 +9,13 @@ var db = require('..lib/db')(knex)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Three Little Wigs' });
-});
+  res.json(data);
 
 /*CUSTOMER INDEX*/
 router.get('/customers/', function(req, res, next) {
   db.getAll('customers', function(err, data) {
-    res.render('customersIndex', { customers: data });
+    // res.render('customersIndex', { customers: data });
+    res.json(data)
   })
 });
 
@@ -29,13 +29,13 @@ router.post('newCustomer', function(req, res, next) {
 /*FIND one customer*/
 router.get('/customers/:id', function(req, res, next) {
   db.findOne('customers', req.params, function(err, person){
-    res.render('customerView', { Character: [person]});
+    res.json(data);
   })
 });
 
 /*Edit Customer*/
 router.get('/character/edit/:id', function(req, res, next) {
-  res.render('editCustomer', { title: 'Dev of the Day' });
+  res.json(data);
 });
 
 /*Product catalogue*/
