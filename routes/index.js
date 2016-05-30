@@ -1,21 +1,20 @@
 var express = require('express');
 var router = express.Router();
-var Knex = require('knex')
-var config = require('../knexfile')
-var knex = Knex(config[process.env.NODE_ENV || 'development'])
-var db = require('..lib/db')(knex)
+const knex = require('../dbConfig')
+var db = require('../lib/db.js')(knex)
 
-/*Custpmer routs*/
+/*Customer routs*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.json(data);
+  res.render('index', { title: 'Three Little Wigs' });
+});
 
 /*CUSTOMER INDEX*/
 router.get('/customers/', function(req, res, next) {
+  console.log('typeof.db: ', typeof(db.getAll))
   db.getAll('customers', function(err, data) {
-    // res.render('customersIndex', { customers: data });
-    res.json(data)
+    res.render('customersIndex', { customers: data });
   })
 });
 
@@ -29,13 +28,13 @@ router.post('newCustomer', function(req, res, next) {
 /*FIND one customer*/
 router.get('/customers/:id', function(req, res, next) {
   db.findOne('customers', req.params, function(err, person){
-    res.json(data);
+    res.render('customerView', { Character: [person]});
   })
 });
 
 /*Edit Customer*/
-router.get('/character/edit/:id', function(req, res, next) {
-  res.json(data);
+router.get('/customers/edit/:id', function(req, res, next) {
+  res.render('editCustomer', { title: 'Dev of the Day' });
 });
 
 /*Product catalogue*/

@@ -2,9 +2,9 @@
   "name": "ThreeLittleWigs",
   "version": "0.0.0",
   "description": "a client-side rendering page using hyperscript adn an express server database",
-  "main": "clientSide/index.js",
-  "private": true,    
+  "private": true,
   "scripts": {
+    "start": "./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify clientSide/index.js > bundle.js",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
@@ -40,6 +40,8 @@
     "hbs": "~3.1.0",
     "knex": "^0.11.4",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "nodemon": "^1.9.2",
+    "serve-favicon": "~2.3.0",
+    "superagent": "^2.0.0"
   }
 }

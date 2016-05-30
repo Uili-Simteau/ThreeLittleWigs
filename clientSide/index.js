@@ -6,9 +6,9 @@ document.onload(function() {
   console.log("I'm ready!")
 });
 
-var button = document.getElementById(#button){
-  onclick('i am clicked')
-}
+var button = document.getElementById('#button')
+  .onclick(console.log('i am clicked'))
+
 
 request.get('/users', function(err, data) {
   if (err) console.log(err) // do something
