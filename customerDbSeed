@@ -4,9 +4,9 @@ exports.seeds = function(knex, Promise) {
     knex('customers').del(),
 
     // Inserts seed entries
-    knex('customers').insert({id: 1, first-name: "Olly", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/olly.jpg", purchased: "I love podcasts, exercise, scifi, surfing and code! I'm a 1,2,3 type of guy.", notes: ''}),
-    knex('customers').insert({id: 2, first-name: "Hape", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/hape.jpg", purchased: "Food, music, sports, the outdoors, health & fitness, family.", notes: ''}),
-    knex('customers').insert({id: 3, first-name: "Uili", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/uili.jpg", purchased: "I like making stuff. - out of wood mainly.", notes: ''}),
+    knex('customers').insert({id: 1, first_name: "Olly", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/olly.jpg", purchased: "I love podcasts, exercise, scifi, surfing and code! I'm a 1,2,3 type of guy.", notes: ''}),
+    knex('customers').insert({id: 2, first_name: "Hape", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/hape.jpg", purchased: "Food, music, sports, the outdoors, health & fitness, family.", notes: ''}),
+    knex('customers').insert({id: 3, first_name: "Uili", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/uili.jpg", purchased: "I like making stuff. _ out of wood mainly.", notes: ''}),
     knex('customers').insert({id: 4, first-name: "Surya", last-name: "Roa", email: "1", home-phone: "/public/images/profile-pics/surya.jpg", purchased: "I am a deep thinker and  I like music, dance and programming.", notes: ''}),
     knex('customers').insert({id: 5, first-name: "Tony", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/tony.jpg", purchased: "I loved Star Trek before it was cool to love Star Trek.", notes: ''}),
     knex('customers').insert({id: 6, first-name: "Ben", last-name: "Hihi", email: "2", home-phone: "/public/images/profile-pics/ben.jpg", purchased: "Activist app appropriator, passionate 'Zip' aficionado.", notes: ''}),

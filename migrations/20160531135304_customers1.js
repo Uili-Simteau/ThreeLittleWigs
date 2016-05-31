@@ -5,10 +5,10 @@ exports.up = function(knex, Promise) {
 
   return knex.schema.createTableIfNotExists('customers', function(table) {
       table.increments('id')
-      table.string('first-name')
-      table.string('last-name')
+      table.string('first_name')
+      table.string('last_name')
       table.string('email')
-      table.string('home-phone')
+      table.string('home_phone')
       table.string('address')
       table.string('purchased')
       table.string('notes')
