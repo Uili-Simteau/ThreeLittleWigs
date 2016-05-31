@@ -3,7 +3,7 @@ var router = express.Router();
 const knex = require('../dbConfig')
 var db = require('../lib/db.js')(knex)
 
-/*Customer routs*/
+/*Customer routes*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
