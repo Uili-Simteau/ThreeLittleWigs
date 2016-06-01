@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 /*CUSTOMER INDEX*/
-router.get('/customers/', function(req, res, next) {
+router.get('/customers', function(req, res, next) {
   console.log('typeof.db: ', typeof(db.getAll))
   db.getAll('customers', function(err, data) {
     res.render('customersIndex', { customers: data });
