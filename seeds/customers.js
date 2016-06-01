@@ -5,8 +5,8 @@ exports.seed = function(knex, Promise) {
     knex('customers').del(),
 
     // Inserts seed entries
-    knex('customers').insert({id: 1, first_name: "Olly", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/olly.jpg", purchased: "I love podcasts, exercise, scifi, surfing and code! I'm a 1,2,3 type of guy.", notes: ''}),
-    knex('customers').insert({id: 2, first_name: "Hape", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/hape.jpg", purchased: "Food, music, sports, the outdoors, health & fitness, family.", notes: ''}),
-    knex('customers').insert({id: 3, first_name: "Uili", last_name: "Roa", email: "1", home_phone: "/public/images/profile_pics/uili.jpg", purchased: "I like making stuff. _ out of wood mainly.", notes: ''})
+    knex('customers').insert({id: 1, first_name: "Brent", last_name: "Douglas", email: "tough@gmail.com", home_phone: "1234134", purchased: "Barry Brown", notes: 'I love long walks on the beach'}),
+    knex('customers').insert({id: 2, first_name: "Sarah", last_name: "Brentwood", email: "easy@gmail.com", home_phone: "09834234", purchased: "Suzie lite", notes: 'My hair makes me happy'}),
+    knex('customers').insert({id: 3, first_name: "Uili", last_name: "Fecteau", email: "simteau@gmail.com", home_phone: "029384098", purchased: "Taxi", notes: 'Someone else likes my hair'})
   );
 };

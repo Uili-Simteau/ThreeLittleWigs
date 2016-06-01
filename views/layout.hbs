@@ -8,14 +8,16 @@
     <div class="header">
       <nav>
         <a href="/">Home</a>
-        <a href="/newCustomer">Reg</a>
-        <a href="/customersIndex">Customer Index</a>
-        <a href="/customers/edit">Edit Customers</a>
-        <a href="/claimForm">Order</a>
+        <a href="/customers/">Customer Index</a>
+        <a href="/newCustomer">Register New</a>
+        <a href="/customers/:id">Find Customer</a>
+        <a href="/customers/edit/:id">Edit Customer</a>
         <a href="/blog">Blog</a>
       </nav>
       <h1>{{title}}</h1>
     </div>
+    <section>
       {{{body}}}
+    </section>
   </body>
 </html>

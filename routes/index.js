@@ -19,22 +19,27 @@ router.get('/customers/', function(req, res, next) {
 });
 
 /*GET new Cumstomer*/
+
+router.get('/newCustomer'), function(req, res, next){
+  res.render('newCustomer', { title: 'New Customer'})
+}
+
 router.post('/newCustomer', function(req, res, next) {
   db.addNew('customers', req.body, function(err, data) {
-    res.redirect('/customers/' +data[0]);
+    res.redirect('/customers/' + data[0]);
   })
 });
 
 /*FIND one customer*/
 router.get('/customers/:id', function(req, res, next) {
   db.findOne('customers', req.params, function(err, person){
-    res.render('customerView', { Character: [person]});
+    res.render('customerView', { Customer: [person]});
   })
 });
 
 /*Edit Customer*/
 router.get('/customers/edit/:id', function(req, res, next) {
-  res.render('editCustomer', { title: 'Dev of the Day' });
+  res.render('editCustomer', { title: 'Edit Customer' });
 });
 
 /*Product catalogue*/
