@@ -9,6 +9,8 @@ exports.up = function(knex, Promise) {
     table.string('name')
     table.string('description')
     table.string('customer_id')
+    table.string('product_link')
+    table.string('supplier')
   })
 };
 
